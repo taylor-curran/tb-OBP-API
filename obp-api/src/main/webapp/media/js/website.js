@@ -29,6 +29,7 @@ $(function() {
 		"hideMethod": "fadeOut",
 		"tapToDismiss": false
 	};
+	let notice;
 	if(notice = $("#lift__noticesContainer___error").text()) {
 		toastr.error(notice, "Error. ")
 	}
@@ -57,7 +58,7 @@ function openNav() {
 	$("#obp-sidebar #small-nav-log-on-button").attr("aria-hidden","false");
 	$("#obp-sidebar").css("display","block");
 	$("#main").css("display","none");
-	logOnButton = $("#small-nav-log-on-button").text().indexOf("Log on")
+	let logOnButton = $("#small-nav-log-on-button").text().indexOf("Log on")
 	if (logOnButton < 0){
 		$("#register-link").css("display","none")
 	}
