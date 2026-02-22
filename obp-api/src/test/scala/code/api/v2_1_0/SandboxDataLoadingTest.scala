@@ -84,8 +84,8 @@ class SandboxDataLoadingTest extends FlatSpec with SendServerRequests with Match
   val server = TestServer
   def baseRequest = host(server.host, server.port)
 
-  val user1Import = SandboxUserImport(email = "user1@example.com", password = "TESOBE520berlin123!", user_name = "user.name_1")
-  val user2Import = SandboxUserImport(email = "user2@example.com", password = "TESOBE520berlin123!", user_name = "user.name_2")
+  val user1Import = SandboxUserImport(email = "user1@example.com", password_hash = "TESOBE520berlin123!", user_name = "user.name_1")
+  val user2Import = SandboxUserImport(email = "user2@example.com", password_hash = "TESOBE520berlin123!", user_name = "user.name_2")
   val differentUsername = "user_one"
   val secondUserName = "user_two"
 

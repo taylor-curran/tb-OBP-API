@@ -638,7 +638,7 @@ case class SandboxLocationImport(
 
 case class SandboxUserImport(
   email : String,
-  password : String,
+  password_hash : String,
   user_name : String)
 
 case class SandboxAccountImport(
@@ -782,8 +782,8 @@ object SandboxData{
     meta = standardMeta
   )
 
-  val user1 = SandboxUserImport(email = "user1@example.com", password = "TESOBE520berlin123!", user_name = "User 1")
-  val user2 = SandboxUserImport(email = "user2@example.com", password = "TESOBE520berlin123!", user_name = "User 2")
+  val user1 = SandboxUserImport(email = "user1@example.com", password_hash = "TESOBE520berlin123!", user_name = "User 1")
+  val user2 = SandboxUserImport(email = "user2@example.com", password_hash = "TESOBE520berlin123!", user_name = "User 2")
 
   val sandboxBalanceImport = SandboxBalanceImport(currency = "EUR", amount = "1000.00")
   

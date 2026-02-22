@@ -34,11 +34,11 @@ trait CreateAuthUsers {
         .firstName(u.user_name)
         .lastName(u.user_name)
         .username(u.user_name)
-        .password(u.password)
+        .password(u.password_hash)
         .validated(true)
 
       val validationErrors = authUser.validate
-      if (!fullPasswordValidation(u.password)) Failure(ErrorMessages.InvalidStrongPasswordFormat)
+      if (!fullPasswordValidation(u.password_hash)) Failure(ErrorMessages.InvalidStrongPasswordFormat)
       else if(!validationErrors.isEmpty) Failure(s"Errors: ${validationErrors.map(_.msg)}")
       else Full(asSaveable(authUser))
     }
