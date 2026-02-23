@@ -15,42 +15,42 @@
   "users": [
     {
       "email": "robert.x.0.gh@example.com",
-      "password": "V8%Ktssl(L",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Robert.X.0.GH"
     },
     {
       "email": "susan.x.0.gh@example.com",
-      "password": "naW9u3C%bh",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Susan.X.0.GH"
     },
     {
       "email": "anil.x.0.gh@example.com",
-      "password": "9W0RIrX-6f",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Anil.X.0.GH"
     },
     {
       "email": "ellie.x.0.gh@example.com",
-      "password": "rMf_OHM0dW",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Ellie.X.0.GH"
     },
     {
       "email": "robert.y.9.gh@example.com",
-      "password": "%1Z43kzt2L",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Robert.Y.9.GH"
     },
     {
       "email": "susan.y.9.gh@example.com",
-      "password": "oITehM!B2V",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Susan.Y.9.GH"
     },
     {
       "email": "anil.y.9.gh@example.com",
-      "password": "TuKaNO8oI-",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Anil.Y.9.GH"
     },
     {
       "email": "ellie.y.9.gh@example.com",
-      "password": "SkJDH+ds2_",
+      "password_hash": "PLACEHOLDER",
       "user_name": "Ellie.Y.9.GH"
     }
   ],
