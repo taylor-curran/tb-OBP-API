@@ -246,7 +246,7 @@ object SecureLoggingDemo extends Loggable {
     def logConfiguration(): Unit = {
       val configs = Map(
         "database.url" -> "jdbc:postgresql://user:password123@localhost:5432/obp",
-        "redis.url" -> "redis://admin:secret456@redis-server:6379",
+        "redis.url" -> "redis://admin:${REDIS_PASSWORD}@redis-server:6379",
         "oauth.client_secret" -> "oauth_secret_xyz789",
         "api.key" -> "api_key_abc123"
       )
