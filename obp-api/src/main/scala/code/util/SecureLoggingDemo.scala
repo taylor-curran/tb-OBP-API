@@ -245,10 +245,10 @@ object SecureLoggingDemo extends Loggable {
      */
     def logConfiguration(): Unit = {
       val configs = Map(
-        "database.url" -> "jdbc:postgresql://user:password123@localhost:5432/obp",
-        "redis.url" -> "redis://admin:secret456@redis-server:6379",
-        "oauth.client_secret" -> "oauth_secret_xyz789",
-        "api.key" -> "api_key_abc123"
+        "database.url" -> sys.env.getOrElse("OBP_DB_URL", "jdbc:postgresql://localhost:5432/obp"),
+        "redis.url" -> sys.env.getOrElse("OBP_REDIS_URL", "redis://localhost:6379"),
+        "oauth.client_secret" -> sys.env.getOrElse("OBP_OAUTH_CLIENT_SECRET", ""),
+        "api.key" -> sys.env.getOrElse("OBP_API_KEY", "")
       )
       
       val logger = net.liftweb.common.Logger("ConfigLogger")
