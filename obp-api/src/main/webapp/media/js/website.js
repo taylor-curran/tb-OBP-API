@@ -29,6 +29,7 @@ $(function() {
 		"hideMethod": "fadeOut",
 		"tapToDismiss": false
 	};
+	let notice;
 	if(notice = $("#lift__noticesContainer___error").text()) {
 		toastr.error(notice, "Error. ")
 	}
